@@ -102,7 +102,7 @@ public class DummyTest {
 		TakesScreenshot screenshot = (TakesScreenshot) driver ;
 		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
 		File destFile = new File("./screenshots/"+fileName+".png");
-		FileUtils.copyFile(srcFile, destFile);
+		FileUtils.copyFile(srcFile, destFile );
 		return destFile.getAbsolutePath();
 	}
 
