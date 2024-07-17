@@ -39,7 +39,7 @@ public class DummyTest {
 		extentSparkReporter.loadJSONConfig(new File("./ExtentReportConfig/Extent-Report-Config.json"));
 		
 		driver = new ChromeDriver();
-		driver.get("https://www.fb.com/");
+		driver.get("https://www.google.com/");
 		
 		ExtentTest extentTest1 = extentReports.createTest("TestCase1");
 		extentTest1.log(Status.PASS, "TestCase1 is Passed");
